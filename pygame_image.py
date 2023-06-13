@@ -17,7 +17,8 @@ def main():
         for event in pg.event.get():
             if event.type == pg.QUIT: return
         screen.blit(bg_img, [0, 0])
-        screen.blit(koukaton,[300,200])
+        i = tmr % 2
+        screen.blit(koukaton_list[i],[300,200])
         pg.display.update()
         tmr += 1      
         clock.tick(1000)
