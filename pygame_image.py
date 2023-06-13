@@ -16,7 +16,7 @@ def main():
     xx = 0
     w = 0
     j = 1
-    oo = 0
+
     while True:
         for event in pg.event.get():
             if event.type == pg.QUIT: return
@@ -26,6 +26,7 @@ def main():
         koukaton_2 = pg.transform.rotozoom(koukaton, w, 1.0)
         screen.blit(koukaton_2,[300,200])
         pg.display.update()
+
         tmr += 1      
         x += 1
         xx += 1
